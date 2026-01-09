@@ -16,8 +16,10 @@ I really recommend you following sites, to get more knowledge about this framewo
 ## Create a new Post
 
 ```shell
-bundle exec jekyll post "My New Page"
+bash tools/new_post.sh "Spring Modular Modulith"
 ```
-Change the title, the content, the categories and the tags of the new page in the file `_posts/my-new-page.md`.
+Change the title, the content, the categories and the tags of the new page in the file `My new Post`.
 
 Optionally, you can add a description to the page.  
+
+YOU HAVE TO BE IN THE ROOT FOLDER OF THE PROJECT TO RUN THE SCRIPT!
