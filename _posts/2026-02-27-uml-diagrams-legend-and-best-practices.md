@@ -425,7 +425,7 @@ Text-based tools like **PlantUML** and **Mermaid** produce diagrams from plain t
 
 ### Keep Diagrams Close to the Code
 
-Diagrams that live in a separate wiki or shared drive quickly become outdated. Store them in the repository, ideally generated from or validated against the actual source code. Tools like Spring Modulith (covered in a [previous post](/architecture/spring/2026/02/27/deep-dive-spring-modulith-part-1.html)) can even auto-generate module diagrams from the codebase.
+Diagrams that live in a separate wiki or shared drive quickly become outdated. Store them in the repository, ideally generated from or validated against the actual source code. Tools like Spring Modulith (covered in a [previous post](/posts/spring-modular-modulith/)) can even auto-generate module diagrams from the codebase.
 
 ### Know When NOT to Use UML
 
