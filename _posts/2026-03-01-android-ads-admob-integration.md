@@ -13,7 +13,7 @@ Monetizing an Android app through advertising is one of the most common revenue 
 
 This guide walks through the full process of adding ads to a **native Android app written in Java**, built with Gradle. It covers SDK setup, every major ad format, testing, mediation, and the policy requirements you must meet before publishing to the Google Play Store.
 
-> **Prerequisite:** This guide assumes you already have a working Android project and are familiar with building and running it. If you need help getting your app onto the Play Store, see [Deploy a Native Android App to the Google Play Store](/android/devops/2026/03/01/deploy-android-app-google-play-store.html).
+> **Prerequisite:** This guide assumes you already have a working Android project and are familiar with building and running it. If you need help getting your app onto the Play Store, see [Deploy a Native Android App to the Google Play Store](/posts/deploy-android-app-google-play-store/).
 
 ## 1. Create an AdMob Account and Register Your App
 

@@ -20,7 +20,7 @@ A class diagram models the **types** that exist in a system and how they relate 
 - What behavior does each entity expose?
 - How are entities connected — through inheritance, composition, association, or dependency?
 
-Class diagrams are **static** — they show what exists, not what happens at runtime. For dynamic behavior, use [sequence diagrams](/architecture/uml/2026/02/27/sequence-diagrams-guide.html) or activity diagrams.
+Class diagrams are **static** — they show what exists, not what happens at runtime. For dynamic behavior, use [sequence diagrams](/posts/sequence-diagrams-guide/) or activity diagrams.
 
 ## When to Use Class Diagrams
 
@@ -825,7 +825,7 @@ Use text-based tools like **PlantUML** or **Mermaid** so your class diagrams are
 A class diagram that contradicts the code is worse than no diagram at all. Periodically validate your diagrams:
 
 - Use IDE plugins (e.g., PlantUML integration in IntelliJ) to reverse-engineer diagrams from code.
-- Use tools like [Spring Modulith](/architecture/spring/2026/02/27/deep-dive-spring-modulith-part-1.html) to auto-generate module dependency diagrams.
+- Use tools like [Spring Modulith](/posts/spring-modular-modulith/) to auto-generate module dependency diagrams.
 - Review diagrams as part of code reviews — if the code changed but the diagram did not, update it or delete it.
 
 ### 12. Avoid Common Mistakes
