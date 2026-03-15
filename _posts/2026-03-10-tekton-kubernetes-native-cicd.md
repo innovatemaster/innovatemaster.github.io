@@ -2,7 +2,7 @@
 layout: post
 title: "Tekton: Kubernetes-Native CI/CD Pipelines"
 date: 2026-03-10 10:00 +0100
-categories: [DevOps, CI/CD]
+categories: [DevOps, CI_CD]
 tags: [tekton, kubernetes, cicd, pipelines, cloud-native, devops, containers, gitops, continuous-delivery, java]
 description: A practical guide to Tekton, the Kubernetes-native CI/CD framework. Covers architecture, core concepts, building pipelines, triggers, catalog tasks, Java/Maven builds, comparison with Jenkins and GitHub Actions, and production best practices.
 ---
