@@ -67,9 +67,9 @@ Strip verbose logging, test credentials, and any `android:debuggable="true"` fla
 ```groovy
 buildTypes {
     release {
-        debuggable false
-        minifyEnabled true
-        shrinkResources true
+        isDebuggable = false
+        isMinifyEnabled = true
+        isShrinkResources = true
         proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
     }
 }
