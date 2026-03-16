@@ -179,7 +179,7 @@ ORDER BY total DESC;
 
 ### SQuirreL SQL Client
 
-[SQuirreL SQL](http://squirrel-sql.sourceforge.net/) is a free, open-source, Java-based database client that connects to any database with a JDBC driver. It was one of the first cross-platform database GUIs and is still actively maintained.
+[SQuirreL SQL](https://squirrel-sql.sourceforge.net/) is a free, open-source, Java-based database client that connects to any database with a JDBC driver. It was one of the first cross-platform database GUIs and is still actively maintained.
 
 **Supported databases:** Any JDBC-compatible database (Oracle, PostgreSQL, MySQL, SQL Server, DB2, H2, HSQLDB, Derby, and many others).
 
