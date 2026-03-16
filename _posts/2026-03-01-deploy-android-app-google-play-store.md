@@ -1,11 +1,11 @@
 ---
-layout: post
+
+## layout: post
 title: "Deploy a Native Android App to the Google Play Store: A Complete Guide"
 date: 2026-03-01 12:00 +0100
 categories: [Android, DevOps]
 tags: [android, java, google-play, deployment, release, signing, app-bundle, gradle, android-studio]
 description: A step-by-step guide to publishing a native Android app written in Java to the Google Play Store, covering project configuration, release signing, building an Android App Bundle, setting up the Play Console, and submitting your first release.
----
 
 # Deploy a Native Android App to the Google Play Store
 
@@ -204,7 +204,7 @@ Google Play requires new apps to be uploaded as an **Android App Bundle** (`.aab
 5. Select the **release** build variant.
 6. Click **Finish**.
 
-The signed `.aab` file will be generated in `app/build/outputs/bundle/release/`.
+The signed `.aab` file will be generated in `app/release/`.
 
 ### Build from the Command Line
 
@@ -247,13 +247,15 @@ The store listing is what users see when they find your app. A polished listing 
 
 ### Required Assets
 
-| Asset | Specification |
-|---|---|
-| App icon | 512 x 512 px, PNG or JPEG |
-| Feature graphic | 1024 x 500 px |
+
+| Asset             | Specification                        |
+| ----------------- | ------------------------------------ |
+| App icon          | 512 x 512 px, PNG or JPEG            |
+| Feature graphic   | 1024 x 500 px                        |
 | Phone screenshots | Minimum 2, 16:9 or 9:16 aspect ratio |
-| Short description | Up to 80 characters |
-| Full description | Up to 4000 characters |
+| Short description | Up to 80 characters                  |
+| Full description  | Up to 4000 characters                |
+
 
 ### Optional but Recommended
 
@@ -348,11 +350,13 @@ Start rollout → 10% of users → monitor for 48h → increase to 50% → full 
 
 After submission, your app enters Google's **review queue**. Review times vary:
 
-| Scenario | Typical Review Time |
-|---|---|
-| New developer account | Up to 7 days or longer |
-| Established developer | Hours to 1-3 days |
-| Update to existing app | Hours to 1 day |
+
+| Scenario               | Typical Review Time    |
+| ---------------------- | ---------------------- |
+| New developer account  | Up to 7 days or longer |
+| Established developer  | Hours to 1-3 days      |
+| Update to existing app | Hours to 1 day         |
+
 
 During review, Google checks for:
 
@@ -412,14 +416,16 @@ Regularly update your `compileSdk`, `targetSdk`, libraries, and Gradle plugin ve
 
 ## Common Pitfalls
 
-| Pitfall | Solution |
-|---|---|
-| Missing keystore or forgotten password | Use Play App Signing for key recovery; store backups securely |
-| `versionCode` not incremented | Each upload must have a higher `versionCode` than the previous one |
-| Crashes only in release builds | Test with R8/ProGuard enabled; review keep rules |
-| App rejected for missing privacy policy | Host a privacy policy page and link it in the store listing and the app |
-| Large APK size | Use App Bundles, enable `shrinkResources`, and deliver assets on demand with Play Asset Delivery |
-| Slow review for new accounts | Plan for up to 7+ days on your first submission |
+
+| Pitfall                                 | Solution                                                                                         |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Missing keystore or forgotten password  | Use Play App Signing for key recovery; store backups securely                                    |
+| `versionCode` not incremented           | Each upload must have a higher `versionCode` than the previous one                               |
+| Crashes only in release builds          | Test with R8/ProGuard enabled; review keep rules                                                 |
+| App rejected for missing privacy policy | Host a privacy policy page and link it in the store listing and the app                          |
+| Large APK size                          | Use App Bundles, enable `shrinkResources`, and deliver assets on demand with Play Asset Delivery |
+| Slow review for new accounts            | Plan for up to 7+ days on your first submission                                                  |
+
 
 ## Summary
 
@@ -446,3 +452,4 @@ Each step has requirements that, if missed, will delay your launch. Plan for the
 - [Target API level requirements -- Google Play](https://developer.android.com/google/play/requirements/target-sdk) -- Google
 - [Google Play Developer API](https://developers.google.com/android-publisher) -- Google
 - [Gradle Play Publisher plugin](https://github.com/Triple-T/gradle-play-publisher) -- Triple-T
+
